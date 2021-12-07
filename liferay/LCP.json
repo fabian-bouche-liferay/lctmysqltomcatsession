@@ -50,6 +50,7 @@
       "deploy": false
     },
     "uat": {
+      "scale": 2,
       "env": {
         "LIFERAY_JVM_OPTS": "-Xms2048m -Xmx6144m -Dorg.apache.tomcat.util.digester.PROPERTY_SOURCE=org.apache.tomcat.util.digester.EnvironmentPropertySource"
       }
