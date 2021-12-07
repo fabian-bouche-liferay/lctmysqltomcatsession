@@ -35,7 +35,7 @@
       type="javax.sql.DataSource"
       factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
       driverClassName="org.mariadb.jdbc.Driver"
-      url="jdbc:mariadb://localhost/${LCP_SECRET_DATABASE_NAME}?useUnicode=true&amp;characterEncoding=UTF-8&amp;useFastDateParsing=false"
+      url="jdbc:mariadb://database/${LCP_SECRET_DATABASE_NAME}?useUnicode=true&amp;characterEncoding=UTF-8&amp;useFastDateParsing=false"
       username="${LCP_SECRET_DATABASE_USER}"
       password="${LCP_SECRET_DATABASE_PASSWORD}"
       maxActive="20"
