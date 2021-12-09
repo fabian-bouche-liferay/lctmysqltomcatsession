@@ -47,6 +47,7 @@
       className="org.apache.catalina.session.PersistentManager"
       processExpiresFrequency="2"
       maxIdleBackup="1"
+      pathname=""
     >
       <Store
         className="org.apache.catalina.session.DataSourceStore"
