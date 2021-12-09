@@ -49,8 +49,13 @@
       maxIdleBackup="1"
       pathname=""
     >
-      <Store
+
+    <!--
         className="org.apache.catalina.session.DataSourceStore"
+    -->
+    
+      <Store
+        className="com.liferay.samples.fbo.session.LiferayDataSourceStore"
         dataSourceName="jdbc/httpSessionDataSource"
         sessionTable="http_sessions"
         sessionIdCol="id"
