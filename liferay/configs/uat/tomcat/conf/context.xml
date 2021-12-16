@@ -43,19 +43,25 @@
       maxWait="10000"
     />
 
-    <Manager
+    <!--
       className="org.apache.catalina.session.PersistentManager"
+      className="com.liferay.samples.fbo.session.LiferayPersistentManager"
+    -->
+
+    <Manager
+      className="com.liferay.samples.fbo.session.LiferayPersistentManager"
       processExpiresFrequency="2"
       maxIdleBackup="1"
       pathname=""
     >
 
     <!--
+        className="com.liferay.samples.fbo.session.LiferayDataSourceStore"
         className="org.apache.catalina.session.DataSourceStore"
     -->
     
       <Store
-        className="com.liferay.samples.fbo.session.LiferayDataSourceStore"
+        className="org.apache.catalina.session.DataSourceStore"
         dataSourceName="jdbc/httpSessionDataSource"
         sessionTable="http_sessions"
         sessionIdCol="id"
